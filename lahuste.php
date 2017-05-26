@@ -22,9 +22,7 @@
 	
 	
 	
-	<div class="autor">
-	&copy; 2017 Anton
-	</div>
+	
 	
 	<?php 
 	include("navigation.php");

@@ -10,15 +10,19 @@
  
   
   <div class="proov"><h1>Biofiltri võimsuse kalkulaator </h1></div>
-  
+  <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true): ?>
   <div class="soodapohi">
   <form method="POST" action=''>
   <table>
-  <tr><td>Maksimaalne biomass (kg) </td><td><input TYPE="text" name="maxBio" value="" placeholder="1000" /></td><tr/>
+  <tr><td>Maksimaalne biomass (kg) </td><td><input TYPE="number" name="maxBio"  placeholder="1000" min="0" step="0.1" style="width:200px;" <?php if(!empty($_POST["maxBio"]))
+	  echo "value=\"" . htmlspecialchars($_POST["maxBio"])."\" "; ?>/></td><tr/>
  
- <tr><td>Maximaalne söödakogus päevas (%)</td><td> <input TYPE="text" name="maxSooda" value="" placeholder="1.2" /></td></tr>
- <tr><td>Proteini sisalduse protsent </td><td> <input TYPE="text" name="prot" value="" placeholder="50" /></td></tr>
- <tr><td>Elemendi tööpindala (m2/m3) </td><td> <input TYPE="text" name="element" value="" placeholder="450" /></td></tr>
+ <tr><td>Maximaalne söödakogus päevas (%)</td><td> <input TYPE="number" name="maxSooda"  placeholder="1.2" min="0"  max="100" step="0.01" style="width:200px;" <?php if(!empty($_POST["maxSooda"]))
+	  echo "value=\"" . htmlspecialchars($_POST["maxSooda"])."\" "; ?>/></td></tr>
+ <tr><td>Proteini sisalduse protsent </td><td> <input TYPE="number" name="prot"  placeholder="50" min="0"  max="100" step="0.1" style="width:200px;" <?php if(!empty($_POST["prot"]))
+	  echo "value=\"" . htmlspecialchars($_POST["prot"])."\" "; ?> /></td></tr>
+ <tr><td>Elemendi tööpindala (m2/m3) </td><td> <input TYPE="number" name="element"  placeholder="450" min="0"  style="width:200px;"  <?php if(!empty($_POST["element"]))
+	  echo "value=\"" . htmlspecialchars($_POST["element"])."\" "; ?> /></td></tr>
  <tr><td>Temperatuur süsteemis (C) </td><td> 
  <select name="temp">
                 <option value="0.3">5</option>
@@ -28,23 +32,21 @@
             </select> <br>
  </td></tr>
 <tr>
-<td><input type='submit' name='vichislit' value='Tee elu lihtsam' class="button"></td>
-<td><input type="reset" name='ochistit' value='Arvutan ise' class="button"></td> 
+<td><input type='submit' name='vichislit' value='Arvuta' class="button"></td>
+<!--<td><input type="reset" name='ochistit' value='Arvutan ise' class="button"></td> see osa nuud mottetu -->
 </tr>
 </table>
 </form>
   
   </div>
-    
+   <?php endif; ?> 
 	
 	
 	
 	
 	
 	
-	<div class="autor">
-	&copy; 2017 Anton
-	</div>
+	
 	
 	<?php 
 	

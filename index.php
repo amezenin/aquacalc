@@ -14,12 +14,12 @@
   <div class="form-head"><h1>Kalakasvatuse programmid</h1></div>
 
   <div class="container">
-      <form class="form-signin" method="post" action="vorm.php">
-        <h2 class="form-signin-heading">Sisseloogimine</h2>
+      <form class="form-signin" method="post" action="?mode=i">
+        <h2 class="form-signin-heading">Sisselogimine</h2>
         
-        <input type="text" class="form-control" placeholder="Username" name="login" required autofocus>
+        <input type="text" class="form-control" placeholder="Username"  name="user" required autofocus>
        
-        <input type="password" class="form-control" placeholder="Password" name="password" required autofocus>
+        <input type="password" class="form-control" placeholder="Password"  name="password" required autofocus>
 		
         <div class="checkbox">
           <label>
