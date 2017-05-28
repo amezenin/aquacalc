@@ -27,7 +27,7 @@ if (isset($_GET['mode'])) {
             break;
 		case 'k':
             show_k();
-			include('navigation.php');
+			
             break;
         case 'l';
             end_session();

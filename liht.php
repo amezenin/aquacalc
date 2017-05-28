@@ -3,7 +3,7 @@
   <head>
   <link rel="stylesheet" type="text/css" href="sooda.css"  />
     <meta charset="utf-8"/>
-	<title></title>
+	<title>Lihtsustatud</title>
 	
   </head>
   <body id="b">
