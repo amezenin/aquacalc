@@ -49,10 +49,7 @@
 	
 	
 	<?php 
-	
 	include("navigation.php");
-	include("bioarvutamine.php");
-	
 ?>
 	
 	

@@ -56,7 +56,7 @@
 	
 	
 	<?php 
-	include ("lahustearvutamine.php");
+	
 	include("navigation.php");
 	?>
 	

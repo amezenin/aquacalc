@@ -43,10 +43,10 @@
 	
 	
 <?php 
-	include("connect.php");
+	
 	include("navigation.php");
-	include("soodaarvutamine.php");
-	include("disconnect.php");
+	
+	
 ?>
 	
 	

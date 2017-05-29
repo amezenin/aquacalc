@@ -28,18 +28,22 @@ function show_li() {
 
 function show_la() {
     include('lahuste.php');
-  
+	include ("lahustearvutamine.php");
 }
 
 function show_s() {
 	
     include('sooda.php');
-  
+	include("connect.php");
+	
+	include("soodaarvutamine.php");
+	include("disconnect.php");
 }
 
 function show_b() {
 	
     include('bio.php');
+	include('bioarvutamine.php');
   
 }
 

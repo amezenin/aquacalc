@@ -96,6 +96,7 @@
 	
 	<?php 
 	include("navigation.php");
+	
 	?>
 	
 	
