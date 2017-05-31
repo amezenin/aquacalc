@@ -1,0 +1,2 @@
+kasutaja: kasutaja
+Parool: parool
